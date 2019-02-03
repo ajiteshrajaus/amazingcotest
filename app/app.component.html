@@ -1,12 +1,12 @@
 
-    <h1>Selecting Number</h1>
+    <h1>Select Event</h1>
     <select type="number" [(ngModel)]="selectedEvent">
         <option *ngFor="let event of events" [ngValue]="event">{{event.eventName}}</option>
     </select>
 
     <hr>
 
-    <h1>Selecting Quantity</h1>
+    <h1>Enter Quantity</h1>
     <input type="text" name="qty" [(ngModel)]="qty" (ngModelChange)="calculateDiscount()">
     {{qty}}
 
